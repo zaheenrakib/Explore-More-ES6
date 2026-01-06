@@ -37,8 +37,8 @@ const products = [
 
 
 //find for single item 
-const singlePoduct = products.find(p => p.color === "red");
-console.log(singlePoduct);
+// const singlePoduct = products.find(p => p.color === "red");
+// console.log(singlePoduct);
 
 // filter return new array
 // const newProduct = products.filter(p => p.color === "red");
@@ -53,3 +53,19 @@ console.log(singlePoduct);
 //   }
 // })
 
+
+class Person {
+  constructor(name, age) {
+      this.age = age,
+      this.name = name
+  }
+}
+
+class Hena extends Person {
+  constructor(name, age, status) {
+    super(name, age)
+  }
+}
+
+// const hena = new Person("hena", 21);
+// console.log(hena)
